@@ -1,6 +1,6 @@
-var area = document.getElementById("area");
+var area = document.getElementById("area")
 
-function entrar (){
+function entrar(){
     var nome = prompt("Qual é o seu nome?");
 
     if (nome === '' || nome === null){
@@ -8,8 +8,18 @@ function entrar (){
         area.innertHTML = "Clique no botão para acessar"
     }
     else {
-        area.innertHTML = "Bem vindo " + nome;
+        area.innerHTML = "Bem vindo " + nome + " ";
+
+        let botao_sair = document.createElement("button");
+        botao_sair.innerText = "Sair da conta";
+        botao_sair.onclick = sair;
+        area.appendChild(botao_sair);
     }
 
     
+}
+
+function sair (){
+    alert ("até mais");
+    area.innerHTML = "Você saiu";
 }
