@@ -13,3 +13,22 @@ function pedir (){
             break;
     }
 }
+
+var data = new Date();
+
+var datanova = new Date("March 10, 2018");
+
+Date.parse (datanova)
+
+dataMilli = new Date (1520650800000)
+datanova.getDate();
+datanova.getMonth ();
+datanova.getDay();
+data.getFullYear();
+data.getDate() + "/" + (data.getMonth() + 1) + "/" + data.getFullYear();
+data.setDate (data.getDate() + 5)
+data.setHours(data.getHours() + 10)
+
+var dias = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
+
+dias[data.getDay()]
