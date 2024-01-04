@@ -1,10 +1,15 @@
-var x = 0
-/*
-while (x<10){
-    document.write ("<br> O Valor do X é: " + x);
-    x++;
-}*/
+function pedir (){
+    var valor = prompt("Digite um valor");
 
-for (a=0; a<5; a++){
-    document.write ("<br> O Valor do A é: " + a);
+    switch(Number(valor) ){
+        case 1:
+            alert("Você escolheu 1- Suco");
+            break;
+        case 2:
+            alert("Você escolheu 2- Água");
+            break;
+        default:
+            alert("Escolha uma opção");
+            break;
+    }
 }
