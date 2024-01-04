@@ -40,3 +40,5 @@ function aluno (nome, curso){
 
     console.log (mensagem);
 }
+
+var lista = ["Mabi", "Lucas", 23];
