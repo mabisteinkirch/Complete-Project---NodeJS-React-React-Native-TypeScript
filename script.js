@@ -1,6 +1,4 @@
-function acao (){
-    document.write("Executando... <br/>");
-}
-
 //tempo em milisegundo
-setInterval(acao, 3000)
+setInterval(()=> {
+    document.write("Executando... <br/>");
+}, 3000)
