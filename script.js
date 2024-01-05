@@ -1,34 +1,36 @@
-function pedir (){
-    var valor = prompt("Digite um valor");
+/*
+Abaixo de 17        - Muito abaixo do peso
+Entre 17 e 18,49    - Abaixo do peso
+Entre 18,5 e 24,99  - Peso normal
+Entre 25 e 29,99    - Acima do peso
+*/
 
-    switch(Number(valor) ){
-        case 1:
-            alert("Você escolheu 1- Suco");
-            break;
-        case 2:
-            alert("Você escolheu 2- Água");
-            break;
-        default:
-            alert("Escolha uma opção");
-            break;
+//peso / (altura*altura)
+
+var peso, altura, imc, resultado;
+
+function calcular (event){
+    event.preventDefault();
+
+    peso = document.getElementById('peso').value;
+    altura = document.getElementById('altura').value;
+
+    imc = peso / (altura * altura);
+    resultado = document.getElementById('resultado');
+
+    if (imc < 17){
+        resultado.innerHTML= '<br/> Seu resultado foi: ' + imc.toFixed(2) + '<br/> Você está muito abaixo do peso';
+    }else if(imc >= 17 && imc < 18.49){
+        resultado.innerHTML= '<br/> Seu resultado foi: ' + imc.toFixed(2) + '<br/> Você está abaixo do peso';
+    }else if (imc > 18.5 && imc <= 24.99){
+        resultado.innerHTML= '<br/> Seu resultado foi: ' + imc.toFixed(2) + '<br/> Você está com peso normal';
+    }else if (imc > 25 && imc < 29.99 ){
+        resultado.innerHTML= '<br/> Seu resultado foi: ' + imc.toFixed(2) + '<br/> Você está acima do peso';
+    }else if(imc >= 30){
+        resultado.innerHTML= '<br/> Seu resultado foi: ' + imc.toFixed(2) + '<br/> Cuidado obesidade';
     }
+
+    //limpar o campo depois de calcular
+    document.getElementById('peso').value = '';
+    document.getElementById('altura').value = '';
 }
-
-var data = new Date();
-
-var datanova = new Date("March 10, 2018");
-
-Date.parse (datanova)
-
-dataMilli = new Date (1520650800000)
-datanova.getDate();
-datanova.getMonth ();
-datanova.getDay();
-data.getFullYear();
-data.getDate() + "/" + (data.getMonth() + 1) + "/" + data.getFullYear();
-data.setDate (data.getDate() + 5)
-data.setHours(data.getHours() + 10)
-
-var dias = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado'];
-
-dias[data.getDay()]
