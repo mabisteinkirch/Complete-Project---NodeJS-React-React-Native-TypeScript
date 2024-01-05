@@ -23,3 +23,12 @@ let usuarios = [
     {nome: "Mabi", cargo: "Fullstack engineer", status: "Ativo"},
     {nome: "Lucas", cargo: "Back-end", status: "Ativo"}
 ];
+
+//Strings
+let nome = "Mabi ";
+let sobrenome = "Steinkirch"
+
+let mensagem = "Meu nome é " + nome + sobrenome;
+
+//Template Strings
+let mensagem2 = `Meu nome é ${nome} ${sobrenome}`;
