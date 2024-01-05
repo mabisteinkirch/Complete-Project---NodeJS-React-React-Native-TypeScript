@@ -9,26 +9,24 @@ let pessoa = {
 
 //acessar: pessoa.altura
 
-let carro = {
-    marca: "Tesla",
-    modelo : "S",
-    ano: 2024,
-    preco: 108,490,
-    cor: "Cherry Red" 
-}
+//console.log (pessoa);
+//console.log (pessoa.nome);
+//console.log (pessoa.cargo);
 
-//acessar: carro.modelo
+//desconstruir o array
+const { nome: rename, cargo } = pessoa;
+console.log (rename);
+console.log (cargo);
 
-let usuarios = [
-    {nome: "Mabi", cargo: "Fullstack engineer", status: "Ativo"},
-    {nome: "Lucas", cargo: "Back-end", status: "Ativo"}
-];
+let nomes = ["Mabi", "Lucas", "Mika"];
 
-//Strings
-let nome = "Mabi ";
-let sobrenome = "Steinkirch"
+//forma padrão de pegar algum item
+console.log(nomes[0]);
 
-let mensagem = "Meu nome é " + nome + sobrenome;
+//desconstruir para pegar mais que uma variável por vez
 
-//Template Strings
-let mensagem2 = `Meu nome é ${nome} ${sobrenome}`;
+let { 0:primeiro, 2:ultimo} = nomes;
+console.log(primeiro);
+console.log(ultimo);
+
+let [primeiroNome, segundoNome] = nomes;
