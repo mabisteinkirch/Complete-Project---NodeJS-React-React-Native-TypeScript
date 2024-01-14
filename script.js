@@ -15,6 +15,9 @@ convidados("Mabi", "Lucas")
 
 function convidados(...nomes){
     console.log(nomes);
+
+    const sorteio = Math.floor(Math.random() * nomes.length);
+    console.log("Nome sorteado foi: " + nomes[sorteio]);
 }
 
 convidados("Mabi", "Lucas")
