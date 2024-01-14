@@ -1,37 +1,20 @@
-//spread operator
-
-/*
-let primeiros = [1,2,3];
-
-let numeros = [...primeiros, 4,5,10];
-console.log(numeros);
-*/
-/*
-let pessoa ={
-    nome: "Mabi",
-    cargo: "TI"
+function convidados(nomes){
+    console.log(nomes);
 }
 
-let novaPessoa ={
-    ...pessoa,
-    status: "ATIVO",
-    cidade: "Nice / FR"
+convidados("Mabi", "Lucas")
+
+function convidados(nome1, nome2){
+    console.log(nome1);
+    console.log(nome2);
 }
 
-console.log(novaPessoa);
-*/
+convidados("Mabi", "Lucas")
 
-function novoUsuario(info){
-    
-    let dados ={
-        ...info,
-        status: "ATIVO",
-        inicio: "01/01/2024",
-        codigo: "12345"
-    }
+//REST operator
 
-
-    console.log(dados);
+function convidados(...nomes){
+    console.log(nomes);
 }
 
-novoUsuario({nome:"Mabi", sobrenome: "Steinkirch", cargo: "DEV"})
+convidados("Mabi", "Lucas")
