@@ -14,3 +14,9 @@ let anonymousFunction = (a, b) => {
 }
 
 anonymousFunction(10,30);
+
+let numeros = [1,2,5,10];
+
+numeros.map ((item) => {
+    console.log(item);
+})
