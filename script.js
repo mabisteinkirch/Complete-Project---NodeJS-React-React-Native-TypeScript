@@ -35,3 +35,13 @@ let busca = listagem.find((item)=>{
 
 console.log(busca);
 
+//FILTER - saber quantos itens repetidos tem
+
+let nomes = ["Mabi", "Lucas", "Mabi", "Mabi", "Gato", "Lucas"]
+
+let resultado = nomes.filter((item)=>{
+ if (item === "Lucas")
+    return item.length;
+})
+
+console.log(resultado);
