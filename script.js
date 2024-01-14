@@ -23,3 +23,15 @@ let total = numeros.reduce((acumulador, numero, indice, original)=>{
 })
 
 console.log("Total do REDUCE: " + total);
+
+// FIND - Devolve o primeiro item que ele encontrar
+
+let listagem = [5, 3, "Mabi", 2, "Gato"]
+
+let busca = listagem.find((item)=>{
+ if (item === "Mabi")
+    return console.log ("Encontrado");
+})
+
+console.log(busca);
+
