@@ -18,3 +18,6 @@ console.log(nome.startsWith("M"));
 console.log(nome.startsWith("Mab"));
 console.log(nome.startsWith("S"));
 
+console.log(nome.endsWith("i"));
+console.log(nome.endsWith("I"));
+console.log(nome.endsWith("bi"));
