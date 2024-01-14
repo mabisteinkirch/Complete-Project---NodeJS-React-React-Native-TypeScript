@@ -1,23 +1,7 @@
-function convidados(nomes){
-    console.log(nomes);
-}
+//MAP - PERCORRER TODO UM ARRAY
 
-convidados("Mabi", "Lucas")
+let lista = ["Mabi", "Lucas", "Nekochan"];
 
-function convidados(nome1, nome2){
-    console.log(nome1);
-    console.log(nome2);
-}
-
-convidados("Mabi", "Lucas")
-
-//REST operator
-
-function convidados(...nomes){
-    console.log(nomes);
-
-    const sorteio = Math.floor(Math.random() * nomes.length);
-    console.log("Nome sorteado foi: " + nomes[sorteio]);
-}
-
-convidados("Mabi", "Lucas")
+lista.map((item, index) => {
+    console.log("Esse é o item: " + item + " Esse é o index: " + index);
+})
