@@ -1,3 +1,4 @@
+import Name from './components/Name';
 
 function App(){
   return(
@@ -10,8 +11,3 @@ function App(){
 
 export default App;
 
-function Name(){
-  return(
-    <span>Hello Mabi</span>
-  )
-}
