@@ -1,9 +1,8 @@
 
-
-function App() {
-  return (
-    <div >
-      <h1>Bem vindo</h1>
+function App(){
+  return(
+    <div>
+      <h1>Componente App</h1>
     </div>
   );
 }
