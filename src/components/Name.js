@@ -1,6 +1,6 @@
-function Name(props){
+function Name({person}){
     return(
-      <span>Hello {props.person}</span>
+      <span>Hello {person}</span>
     )
   }
 
