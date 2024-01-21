@@ -5,12 +5,18 @@ function App(){
 
   const [person, setPerson] = useState('Programmmer')
 
+  function handleChangeName(){
+    setPerson('Mabi');
+  }
 
   return(
     <div>
       <h1>Componente App</h1>
       <h2>Hello: {person}</h2>
-      <Name person="Mabi" />
+      <button onClick={handleChangeName}>
+        Change name
+      </button>
+      
     </div>
   );
 }
